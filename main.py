@@ -2,15 +2,15 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import xlrd
-
+import openpyxl
 # Zad1
-x = np.arange(1,20,1)
-y = (1/x)
-plt.plot(x,y,label="f(x)")
-plt.ylim(0,1)
-plt.xlim(0,20)
-plt.legend()
-plt.show()
+# x = np.arange(1,20,1)
+# y = (1/x)
+# plt.plot(x,y,label="f(x)")
+# plt.ylim(0,1)
+# plt.xlim(0,20)
+# plt.legend()
+# plt.show()
 
 # Zad2
 # x = np.arange(1,20,1)
@@ -44,7 +44,7 @@ plt.show()
 # plt.plot(x,s+2)
 # plt.show()
 
-#  Zad5
+ # Zad5
 # df = pd.read_csv("iris.csv", names=["sepal len", "sepal wid", "petal len", "petal wid", "class"])
 # df = pd.DataFrame(df)
 # df = df[["sepal len", "sepal wid", "class"]]
@@ -60,6 +60,7 @@ plt.show()
 # excl = pd.ExcelFile("imiona.xlsx")
 # df = pd.read_excel(excl, header=0)
 # g1 = df.groupby(["Plec"]).agg({"Liczba":["sum"]})
+# w = g1.plot.bar()
 # plt.xlabel("plec")
 # plt.ylabel("liczba")
 # plt.xticks(rotation=0)
